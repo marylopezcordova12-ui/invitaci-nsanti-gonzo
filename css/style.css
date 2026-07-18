@@ -1,0 +1,181 @@
+@font-face {
+  font-family: 'SwirlyCanalope';
+  src: url('../Fonts/SwirlyCanalope_PERSONAL_USE_ONLY.otf') format('opentype');
+}
+
+
+h1, p {
+  font-family: 'SwirlyCanalope', Arial, sans-serif;
+}
+
+#temporizador {
+  font-size: 2rem;
+  letter-spacing: 2px;
+  text-align: center; 
+  color: #775537;       /* color del texto */
+  border: 2px solid #775537; /* contorno marrón */
+  border-radius: 8px;
+  padding: 10px 20px;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+#temporizador:hover {
+  background-color: #775537; /* relleno al pasar el cursor */
+  color: white;              /* texto blanco */
+}
+
+
+.numeros {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+
+.alinear {
+  display: flex;
+  justify-content: center; /* centra horizontalmente */
+  align-items: center;     /* centra verticalmente */
+  height: 10vh;
+  margin: 0;
+  font-size: 35px;
+  text-align: center;
+  font-family: 'SwirlyCanalope', Arial, sans-serif; /* aquí sí aplicas la fuente */
+}
+
+.titulos{
+     display: flex;
+  justify-content: center; /* centra horizontalmente */
+  align-items: center;     /* centra verticalmente */
+  height: 10vh;           /* ocupa toda la ventana */
+  margin: 0;
+  font-size: 60px;   
+   text-align: center;/* tamaño grande */
+}
+
+
+#temporizador {
+  font-size: 2rem;
+  letter-spacing: 2px;
+  text-align: center; 
+}
+
+.apartado {
+  padding: 40px;       /* espacio interno */
+  margin: 20px 0;      /* separación entre bloques */
+  text-align: center;  /* centra el texto */
+  border-radius: 10px; /* esquinas redondeadas opcional */
+}
+
+
+.boton {
+  display: inline-block;       /* que se comporte como botón */
+  padding: 12px 24px;          /* espacio interno */
+  margin: 10px;                /* separación entre botones */
+  border: 2px solid #775537;   /* contorno verde */
+  border-radius: 8px;          /* esquinas redondeadas */
+  background-color: transparent; /* fondo transparente */
+  color: #ffffff;              /* texto verde */
+  font-size: 18px;             /* tamaño de letra */
+  text-decoration: none;       /* quita el subrayado */
+  cursor: pointer;             /* cursor de mano */
+  transition: all 0.3s ease;   /* efecto suave */
+}
+
+.boton:hover {
+  background-color: #775537;   /* se rellena al pasar el mouse */
+  color: white;                /* texto blanco */
+}
+
+html, body {
+  height: 100%;   /* asegura que el fondo cubra toda la pantalla */
+  margin: 0;      /* elimina márgenes por defecto */
+}
+
+
+#presentacion {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #d7e2de;
+  text-align: center;
+  z-index: 9999;
+  opacity: 1;                   /* visible al inicio */
+  transition: opacity 1.5s ease; /* efecto de desvanecimiento */
+}
+
+#presentacion.fade-out {
+  opacity: 0;                   /* se desvanece */
+  pointer-events: none;
+}
+
+#contenido {
+  display: none;
+}
+
+
+body {
+  background-image: url("../img/Green\ background\ paper\ _\ Vintage\ floral\ border\ design\,\ Leaf\ background.jpg"); /* tu imagen */
+  background-size: cover;        /* se adapta a toda la pantalla */
+  background-position: center;   /* centra la imagen */
+  background-repeat: no-repeat;  /* evita que se repita */
+  background-attachment: fixed;  /* queda fija al hacer scroll */
+}
+
+.foto-santi,
+.foto-gonzo {
+  width: 350px;
+  height: 450px;
+  object-fit: cover;   /* recorta para uniformar */
+  border-radius: 50%;  /* si quieres óvalos/círculos */
+  display: block;
+  margin: 0 auto;
+}
+
+
+
+.carrusel-img {
+  width: 300px;   /* tamaño reducido */
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Aplica la misma fuente a los campos de confirmación */
+#confirmacion label,
+#confirmacion input,
+#confirmacion .boton {
+  font-family: 'SwirlyCanalope', cursive; /* o la fuente que uses en tus títulos */
+  font-size: 20px;
+  color: #2c3e50;
+}
+
+/* Estilo del campo de número */
+#confirmacion input[type="number"] {
+  padding: 19px 12px;
+ 
+  border-radius: 8px;
+  text-align: center;
+  width: 80px;
+  font-weight: bold;
+}
+
+/* Botones de confirmación */
+#confirmacion .boton {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 20px;
+  
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+
